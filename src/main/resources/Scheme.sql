@@ -1,6 +1,6 @@
 --drop table album, card, word, t_user;
 
-CREATE TYPE part_of_speech AS enum (
+CREATE TYPE IF NOT EXISTS part_of_speech AS enum (
 	'noun',			-- Существительное (child, Cebu, Japan, mall, love)
 	'verb',			-- Глагол (eat, is, talk, sleep)
 	'adjective',	-- Прилагательное (large, blue, old, many, high)
